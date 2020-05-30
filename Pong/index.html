@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pong</title>
+        <link rel="stylesheet" href="pong.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    </head>
+    <body>
+        <div onclick="setting()" id="setting" class="menu">Settings</div>
+        <div id="controlpanel">
+            <div onclick="startGame()" id="start" class="controls">Start Game</div>
+            <div onclick="stopGame()" id="stop" class="controls">Stop Game</div>
+            <div onclick="pauseGame()" id="pause" class="controls">Pause Game</div>
+            <div onclick="resumeGame()" id="resume" class="controls">Resume Game</div>
+        </div>
+        <div id="header">
+            <h1 id="title">Pong</h1>
+            <h3 id="left">Player 1:  <span id="score1">&nbsp;0</span></h3>
+            <h3 id="right">Player 2:  <span id="score2"> &nbsp;0</span></h3>
+        </div>
+        <div id="gameBoard">
+            <div id="paddle1" class="paddle"></div>
+            <div id="ball"></div>
+            <div id="paddle2" class="paddle"></div>
+            <button id="timerbox" class="hidden"><span id="timer"></span></button>
+        </div>
+        <div id="lightbox" class="hidden"></div>
+        <div id="positionMessage">
+            <div id="boundaryMessage" class="hidden">
+                <img id="x" src="images/x.png" alt="close" onclick="continueGame()">
+                <br>
+                <h1 class="texttitle" id="message">&nbsp;</h1>
+                <br><br>
+                <p class="texttitle" id="message2"></p>
+                <br>
+                <button id="button" onclick="startNewGame()" class="unhidden">Start New Game</button>
+            </div>
+        </div>
+        <div id="menubox" class="hidden"></div>
+        <div id="positionMessage1">
+            <div id="boundaryMessage1" class="hidden">
+                <img id="x1" src="images/x.png" alt="close" onclick="closeMenu()">
+                <br>
+                <h1 class="texttitle" id="message3">&nbsp;</h1>
+                <br><br>
+                <p class="texttitle" id="message4"></p>
+                <br>
+                <div id="buttons" class="unhidden">
+                    <button id="button1" onclick="slowMode()" class="menubutton">Slow Mode</button>            
+                    <button id="button2" onclick="mediumMode()" class="menubutton">Medium Mode</button> 
+                    <button id="button3" onclick="fastMode()" class="menubutton">Fast Mode</button>
+                </div>
+            </div>
+        </div>
+        <script src="pong.js"></script>
+    </body>
+</html>
