@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+}
+#gameBoard{
+    border:1px solid black;
+    display:grid;
+    grid-template-columns: 120px 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 120px 120px;
+    justify-content: center;
+    width:600px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#gameBoard div{
+    background-color: #00EE00;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.rider{
+    background-image: url("images/rider.png");
+}
+.horseup{
+    background-image: url("images/horse-up.png");
+}
+.horsedown{
+    background-image: url("images/horse-down.png");
+}
+.horseleft{
+    background-image: url("images/horse-left.png");
+}
+.horseright{
+    background-image: url("images/horse-right.png");
+}
+.enemyup{
+    background-image: url("images/enemyup.png");
+}
+.enemydown{
+    background-image: url("images/enemydown.png");
+}
+.enemyleft{
+    background-image: url("images/enemyleft.png");
+}
+.enemyright{
+    background-image: url("images/enemyright.png");
+}
+.horseriderup{
+    background-image: url("images/horserider-up.png");
+}
+.horseriderdown{
+    background-image: url("images/horserider-down.png");
+}
+.horseriderleft{
+    background-image: url("images/horserider-left.png");
+}
+.horseriderright{
+    background-image: url("images/horserider-right.png");
+}
+.horseriderupfence{
+    background-image: url("images/horserider-up-fence.png");
+}
+.horseriderdownfence{
+    background-image: url("images/horserider-down-fence.png");
+}
+.horseriderleftfence{
+    background-image: url("images/horserider-left-fence.png");
+}
+.horseriderrightfence{
+    background-image: url("images/horserider-right-fence.png");
+}
+.fencetop{
+    background-image: url("images/fencetop.png");
+}
+.fence{
+    background-image: url("images/fence.png");
+}
+.flag{
+    background-image: url("images/flag.png");
+    
+}
+.rock{
+    background-image: url("images/rock.png");
+}
+.tree{
+    background-image: url("images/tree.png");
+}
+.water{
+    background-image: url("images/water.png");
+}
